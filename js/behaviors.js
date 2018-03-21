@@ -47,4 +47,13 @@ $(document).ready(function() {
         $(".content-box").slideUp();
         $(".mobile-nav").slideUp();
     }));
+
+    //Work 
+    $("a[href$='#work']").on("click", (function(){
+        $(".content-box").slideUp();
+        $('.work').delay(500).slideDown(600, "swing");
+        $(".mobile-nav").slideUp();
+    }));
+
+
 });
