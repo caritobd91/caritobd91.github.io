@@ -13,9 +13,10 @@ $(document).ready(function() {
         if (width > 580){
             //if it is, mobile nav display: none
             $(".mobile-nav").css("display", "none");
-        }
+        } 
     }));
 
+    
     //Hides laptop 
     $("a[href$='#work'],a[href$='#mystory'],a[href$='#contactme']").on('click', (function(){
         $('#laptop').animate({right: '-1000px'});

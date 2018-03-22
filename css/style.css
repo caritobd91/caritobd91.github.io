@@ -25,8 +25,6 @@ a:focus {
 }
 
 .lockup {
-    /* position: relative; */
-    /* top: 176px; */
     left: 7%;
 }
 
@@ -51,7 +49,6 @@ a:focus {
     border-bottom: 0.2px solid #3a3535;
     border-bottom-width: thin;
     padding-bottom: 0.7em;
-    /* position: absolute; */
 }
 #lockup-container {
     top: 50%;
@@ -65,10 +62,7 @@ a:focus {
     display: flex;
     justify-content: space-between;
     padding: 0%;
-    /* margin-top: 1%; */
     font-size: 0.9em;
-    /* position: absolute; */
-    /* top: 20em; */
     left: 7%;
 }
 
@@ -291,6 +285,8 @@ a:focus {
         right: 0;
         position: relative;
         padding-top: 15px;
+        top: 0;
+        transform: translateY(0);
     }
     .content-header {
         margin-top: 0;
