@@ -286,7 +286,6 @@ a:focus {
         height: 70%;
         right: 0;
         position: relative;
-        padding-top: 15px;
         top: 0;
         transform: translateY(0);
         display: block !important;
@@ -298,4 +297,9 @@ a:focus {
     .content-box.contact {
         padding-top: 0;
     }
+
+    #wrap-pic {
+        padding-top: 15px;
+    }
+
 }
