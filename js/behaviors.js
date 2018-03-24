@@ -2,8 +2,6 @@ $(document).ready(function() {
     
     $(".hamburgermenu").on("click", (function() {
         $(".mobile-nav").delay(500).slideToggle();
-        //pages hide when hamburger menu is clicked
-        $(".content-box").slideUp();
     }));
 
     // Checking for window size to style main nav accordingly
@@ -12,11 +10,18 @@ $(document).ready(function() {
         var width = $(window).width();
         if (width > 580){
             //if it is, mobile nav display: none
-            $(".mobile-nav").css("display", "none");
+            $(".mobile-nav").css("display", "none");  
         } 
     }));
 
-    
+    //Scroll to pages on click for mobile
+    $(".mobile-nav a").on("click", function(){
+        var contentId = `#${this.className}`;
+        $("html, body").animate({
+            scrollTop: $(contentId).offset().top
+        }, 1000);
+    });
+
     //Hides laptop 
     $("a[href$='#work'],a[href$='#mystory'],a[href$='#contactme']").on('click', (function(){
         $('#laptop').animate({right: '-1000px'});
@@ -33,27 +38,23 @@ $(document).ready(function() {
         $(".content-box").slideUp();
         //my story slides down
         $('.story').delay(500).slideDown(600, "swing");
-        $(".mobile-nav").slideUp();
     }));
 
     //contact box animation
-    $("a[href$='#contactme']").on("click", (function(){
+     $("a[href$='#contactme']").on("click", (function(){
         $(".content-box").slideUp();
         $('.contact').delay(500).slideDown(600, "swing");
-        $(".mobile-nav").slideUp();
-    }));
+     }));
 
     // hides pages when home is clicked
     $("a[href$='#home']").on("click", (function(){
         $(".content-box").slideUp();
-        $(".mobile-nav").slideUp();
     }));
 
     //Work 
     $("a[href$='#work']").on("click", (function(){
         $(".content-box").slideUp();
         $('.work').delay(500).slideDown(600, "swing");
-        $(".mobile-nav").slideUp();
     }));
 
 

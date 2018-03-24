@@ -196,6 +196,8 @@ a:focus {
 @media only screen and (max-width: 580px) {
     body {
         margin: 0;
+        width: auto;
+        overflow: auto;
     }
     #laptop {
         display: none;
@@ -287,6 +289,8 @@ a:focus {
         padding-top: 15px;
         top: 0;
         transform: translateY(0);
+        display: block !important;
+        margin-bottom: 20px;
     }
     .content-header {
         margin-top: 0;
