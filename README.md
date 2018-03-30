@@ -12,7 +12,7 @@ This is a very important class because it alows me to style all pages with just 
 
 The pages itslef also have their own classes such as "contact", "work", etc. I created these to give them certain style properties that are more specific and arent shared by all content-box classes. Also, i used these classes to select the pages with jQuerry in certain instances.
 
-## JavaScrip Functions
+## JavaScript Functions
 I created several functions.
 One of them uses a variable named "width", which checks for the window width, and if the size is higher than 580 pixels, which is the threshold for mobile in css, then the mobile-nav does not show (display: none). This means that the mobile-nav will only show if the window size is only less than 580px. 
 
