@@ -1,9 +1,11 @@
 # caritobd91.github.io
 
 Description
+
 This is my personal portfolio. It contains my contact information, a brief story of myself and a link to my projects on github.
 
 Custom CSS Classes
+
 .main-nav and mobile-nav
 These classes style the navigation menu for desktop and mobile. Mobile-nav displays block, 100% width of the page and is activated when the hamburger menu is clicked, in desktop this navigation has diplay: none so that my main navigation shows up below the lockup.
 
