@@ -18,3 +18,4 @@ One of them uses a variable named "width", which checks for the window width, an
 
 I also created a function to allow scrolling to each section on the page in mobile when the mobile-nav is clicked. This way, when  the user clicks on the hamburger icon they can click on any hyperlink and it will go straight to that section by smoothly scrolling to it. This function is on line 17. The variable stored in line 19 is for reusability. It allows the javascript to store the classname of the hyperlink that is clicked, and then navigate to the section of the page using the similarly named id.
 
+The rest of the anonymous functions select the content pages by their href attribute when the main-nav is clicked, and they display with an animation effect.
